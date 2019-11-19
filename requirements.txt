@@ -1,0 +1,8 @@
+selenium
+numpy
+scipy
+pandas
+matplotlib
+requests
+pyunpack
+patool
