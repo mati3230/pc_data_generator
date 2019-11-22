@@ -41,6 +41,8 @@ The scene_compositor project has to be opened with [Unity](https://unity.com/). 
 
 After the scene is build, the objs_dir of the parameters below has also to be specified in a .txt file in the StreamingAssets folder. You can find the StreamingAssets folder in the directory where the *Compositor.exe* is placed: *Compositor_Data/StreamingAssets*. There is a file called *ObjectsDirectory.txt*. Here you can specify the objs_dir of the parameters below. 
 
+The object categories which should be downloaded can be specified in the [categories.txt](categories.txt) file. The heights of a category or subcategory can be specified in the [heights.csv](heights.csv) file. The first column represents the category and the second the subcategory. The third and fourth column specify the minimum and maximum scale. If a value of the first column is equal to a value of the second one, the row will be used as fallback if the subcategory does not exist. 
+
 The point cloud generation process can be started with:
 
 *python build_database.py*
