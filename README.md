@@ -37,9 +37,30 @@ To run and build the [Unity](https://unity.com/) Project in the directory "./sce
 
 ## Usage
 
-A build of the scene_compositor project should be placed in *./scene_compositor/Build/Compositor/Compositor.exe*. The scene_compositor project has to be opened with [Unity](https://unity.com/). The point cloud generation process can be started with:
+The scene_compositor project has to be opened with [Unity](https://unity.com/). A build of the scene_compositor project should be placed in *./scene_compositor/Build/Compositor/Compositor.exe*. The corresponding scene for the build is *./scene_compositor/Assets/Scenes/Compositor.unity*. 
+
+After the scene is build, the objs_dir of the parameters below has also to be specified in a .txt file in the StreamingAssets folder. You can find the StreamingAssets folder in the directory where the *Compositor.exe* is placed: *Compositor_Data/StreamingAssets*. There is a file called *ObjectsDirectory.txt*. Here you can specify the objs_dir of the parameters below. 
+
+The point cloud generation process can be started with:
 
 *python build_database.py*
+
+The parameteres of the build_database script can be printed with the *-h* option and are listed below: 
+
+|Parameter|Description|Type|Default|
+|-|-|-|-|
+| --objs_dir | Directory where the 'PointcloudScenes' is located/will be created. This directory will be created if it not exists.  | str | ./objects |
+| --compositor_dir | Directory to the builded scene_compositor program. | str | ./scene_compositor/Build/Compositor/Compositor.exe |
+| --conversion_only | If 'True', only a conversion of the mesh scenes to point clouds will be conducted and the download will be skipped. | bool | False |
+| --max_points | Determines the maximum number of points in the resulting point clouds. | int | 10000 |
+| --debug | If 'True', the unity compositor can be started from the unity editor. | bool | False |
+
+In order to stop the database generation, you have to kill the Compositor program and the build_database program. 
+After the database generation, you may want to remove some points from the point cloud that are far away from the room. These points occur due to some shapes of some models that are huge. To clean the scenes, call: 
+
+*python clean_scenes.py*
+
+With the *--objs_dir* option, you can specify the directory where the PointcloudScenes folder is located. With the *--max_dim* option, you can throw away points that have a spatial coordinate (x,y,z) greater than max_dim. 
 
 ## scene_compositor Parameters
 
