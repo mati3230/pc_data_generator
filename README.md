@@ -2,7 +2,7 @@
 
 Point clouds are generated from mesh scenes. A detailed documentation will follow soon. 
 The project was developed in context of the [smart segmentation](https://github.com/mati3230/smartsegmentation) project. 
-The generated point clouds can be used in the [segmentation environment](https://github.com/mati3230/segmentation). 
+The generated point clouds can be used in the [segmentation environment](https://github.com/mati3230/segmentation). The Compositor is developed and is tested under Windows 10, as [Unity](https://unity.com/) with the [TriLib](https://assetstore.unity.com/packages/tools/modeling/trilib-model-loader-package-91777) is used to create the mesh scenes. 
 
 ## Requirements
 
