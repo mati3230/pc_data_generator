@@ -62,6 +62,14 @@ After the database generation, you may want to remove some points from the point
 
 With the *--objs_dir* option, you can specify the directory where the PointcloudScenes folder is located. With the *--max_dim* option, you can throw away points that have a spatial coordinate (x,y,z) greater than max_dim. 
 
+An example scene is depicted below: 
+
+![MeshScene](figures/mesh_scene.JPG)
+
+The scene was transformed to the following point cloud: 
+
+![PCScene](figures/pc_scene.JPG)
+
 ## scene_compositor Parameters
 
 The following parameters appear in the Unity inspector and can be changed by the user. 
