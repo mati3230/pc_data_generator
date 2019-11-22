@@ -1,6 +1,7 @@
 # Point Cloud Data Generator
 
 Point clouds are generated from mesh scenes. A detailed documentation will follow soon. 
+The project was developed in context of the [smart segmentation](https://github.com/mati3230/smartsegmentation) project. 
 
 ## Requirements
 
