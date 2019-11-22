@@ -22,7 +22,7 @@ namespace SceneCompositor
         Vector2 roomDepths = new Vector2(5f, 7f);
         Vector3 roomSize;
 
-        [SerializeField, Tooltip("Seperation character of the csv file")]
+        [SerializeField, Tooltip("Seperation character of the csv files")]
         char sep = ';';
         ContextInformation contextInformation;
         ObjectIO objectIO;
