@@ -92,3 +92,7 @@ The following parameters appear in the Unity inspector and can be changed by the
 | Ip Address | IP of the program which transforms .ply files to .csv point cloud |
 | Port | Port of the program which transforms .ply files to .csv point cloud |
 | N Scenes | How many scenes should be created |
+
+## Acknowledgements
+
+This project is sponsored by: German Federal Ministry of Education and Research (BMBF) under the project number 13FH022IX6. Project name: Interactive body-near production technology 4.0 (German: Interaktive körpernahe Produktionstechnik 4.0 (iKPT4.0))
