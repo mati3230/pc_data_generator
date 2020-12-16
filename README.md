@@ -93,6 +93,30 @@ The following parameters appear in the Unity inspector and can be changed by the
 | Port | Port of the program which transforms .ply files to .csv point cloud |
 | N Scenes | How many scenes should be created |
 
+## Citation
+
+If you use this repository, please use the following citation:
+
+@inproceedings{
+	
+	Tiator2020,
+
+	address = {Santiago de Compostela, Spain},
+	
+	author = {Tiator, Marcel and Geiger, Christian and Grimm, Paul},
+	
+	booktitle = {Proceedings of the 24th European Conference on Artificial Intelligence - ECAI '20},
+	
+	publisher = {IOS Press},
+	
+	title = {{Point Cloud Segmentation with Deep Reinforcement Learning}},
+	
+	url = {http://ecai2020.eu/papers/1345{\_}paper.pdf},
+	
+	year = {2020}
+	
+}
+
 ## Acknowledgements
 
 This project is sponsored by: German Federal Ministry of Education and Research (BMBF) under the project number 13FH022IX6. Project name: Interactive body-near production technology 4.0 (German: Interaktive körpernahe Produktionstechnik 4.0 (iKPT4.0))
